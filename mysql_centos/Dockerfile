@@ -5,6 +5,9 @@ MAINTAINER Kopiás Csaba <csaba.replacethis.kopias.replacethis.net>
 # Inform about software versions being used inside the builder
 ENV PERCONA_VERSION="5.5"
 
+
+ENV MYSQL_ROOT_PASS="root"
+
 # Set labels used in OpenShift to describe the builder images
 LABEL io.k8s.description="Percona Server" \
       io.k8s.display-name="Percona Server 5.5" \
