@@ -45,6 +45,9 @@ echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root';" |mysql -u
 mysqladmin -h 127.0.0.1 -u root -proot shutdown;
 # 
 
+
+VOLUME /home/user/mysql/data
+
 EXPOSE 3306
 
 CMD mysqld_safe --defaults-file='/home/user/mysql/my.cnf'
